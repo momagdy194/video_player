@@ -22,6 +22,8 @@ environment:
 
 dependencies:
   chewie: ^0.12.1+1
+  flushbar: ^1.10.4
+  division: ^0.8.8
   flutter:
     sdk: flutter
 

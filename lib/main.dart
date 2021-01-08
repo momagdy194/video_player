@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_videos/cheweitem.dart';
+import 'package:flutter_videos/snack_bar/snac_bar.dart';
+import 'package:flutter_videos/video_player/cheweitem.dart';
+import 'package:flutter_videos/video_player/home.dart';
 import 'package:video_player/video_player.dart';
+
+import 'Divition_button/divition_button.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,17 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: MyHomePage(),
+      home: DivisionButtonX(),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: ListView(children: [
-      ChewieItem(VideoPlayerController.network("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"), true)
-
-    ],),);
+    return SnackBarScreen();
   }
 }
