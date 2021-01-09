@@ -5,6 +5,7 @@ import 'package:flutter_videos/video_player/home.dart';
 import 'package:video_player/video_player.dart';
 
 import 'Divition_button/divition_button.dart';
+import 'flutter_hook/hook_ups.dart';
 void main() {
   runApp(MyApp());
 }
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: DivisionButtonX(),
+      home: HomePage(),
     );
   }
 }
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SnackBarScreen();
+//    return: DivisionButtonX(),
+//    return: VideoHome(),
+
+    return FlutterGookScreen();
   }
 }
